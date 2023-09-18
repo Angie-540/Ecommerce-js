@@ -1,5 +1,13 @@
 
 
+// IMAGE GALLERY
+function imgGallery() {
+    const mainImg = document.querySelector('.details__img'),
+    smallImg = dpcument.querySelectorAll(.details__small-img);
+
+}
+
+imgGallery ();
 
 // SWIPER CATEGORIES
 var swiperCategories = new Swiper('.categories__container', {
