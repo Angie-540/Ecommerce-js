@@ -3,7 +3,14 @@
 // IMAGE GALLERY
 function imgGallery() {
     const mainImg = document.querySelector('.details__img'),
-    smallImg = dpcument.querySelectorAll(.details__small-img);
+    smallImg = document.querySelectorAll('.details__small-img');
+
+    smallImg.forEach((img) => {
+        img.addEventListener('click', function()
+        {
+            mainImg.src = this.src;
+        });
+    });
 
 }
 
