@@ -1095,3 +1095,25 @@ nav {
     border-top: 1px solid var(--border-color-alt);
     padding-top: 1rem;
 }
+
+/* DETAILS INFO & REVIEWS */
+.details__tabs {
+    display: flex;
+    column-gap: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+.details__tab {
+    font-family: var(--second-font);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-600);
+    cursor: pointer;
+}
+
+.details__tab.active-tab {
+    color: var(--first-color);
+}
+
+.details__tab-content:not(.active-tab) {
+    display: none;
+}
