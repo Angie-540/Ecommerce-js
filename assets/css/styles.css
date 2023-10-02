@@ -108,6 +108,11 @@ input {
     outline: none;
 }  
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 /* REUSABLE CSS CLASSES */
 .container {
     max-width: 1320px;
@@ -1116,4 +1121,10 @@ nav {
 
 .details__tab-content:not(.active-tab) {
     display: none;
+}
+
+.info__table tr th,
+.info__table tr td {
+    border: 1px solid var(--border-color-alt);
+    padding: 0.625rem 1.25rem;
 }
