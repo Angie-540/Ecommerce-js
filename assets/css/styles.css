@@ -121,7 +121,7 @@ table {
 }
 
 .form__input {
-    border:1px solid var(--border-color-alt);
+    border:1px solid var(--border-color);
     padding-inline: 1rem;
     height: 45px;
     border-radius: 0.25rem;
@@ -1272,11 +1272,13 @@ nav {
 .table__description,
 .table__price,
 .table__subtotal,
-.table__trash {
+.table__trash,
+.table__stock {
     font-size: var(--small-font-size);
 }
 
-.table__title {
+.table__title,
+.table__stock {
     color: var(--first-color);
 }
 
@@ -1367,3 +1369,73 @@ nav {
 .cart__total .btn {
     display: inline-flex;
 }
+
+
+/* CART OTHERS */
+
+/* WISHLIST */
+
+/* CHECKOUT */
+.checkout__container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.checkout__group:nth-child(2) {
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.checkout__group .section__title {
+    font-size: var(--large-font-size);
+}
+
+.checkout__title {
+    font-size: var(--small-font-size);
+}
+
+.order__table tr th,
+.order__tabletr td {
+    border: 1px solid var(--body-color);
+    padding: .5rem;
+    text-align: center;
+}
+
+.order__table tr th {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+}
+
+.order__img {
+    width: 80px;
+}
+
+.table__quantity,
+.order__subtitle {
+    font-size: var(--small-font-size);
+}
+
+.order__grand-total {
+    color: var(--first-color);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-700);
+}
+
+/* COMPARE */
+
+/* LOGIN & REGISTER */
+.login-register__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+}
+
+.login,
+.register {
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* ACCOUNTS */
+
+/* BREAKPOINTS */
